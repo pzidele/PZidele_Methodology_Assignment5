@@ -1,76 +1,42 @@
-package assignment5;
+package ElectoralVotes;
 
 public class State {
-	
-	private String name;
-	private int numElectoral;
-	private int numDemPopular;
-	private int numRepPopular;
-	
-	private int numDemElectoral;
-	private int numRepElectoral;
-	
-	public State(String name, int numElectoral, int numDem, int numRep) {
-		this.name = name;
-		this.numElectoral = numElectoral;
-		this.numDemPopular = numDem;
-		this.numRepPopular = numRep;
-	}
 
+    private String name;
+    private int numElectoral;
+    private int numDemPopular;
+    private int numRepPopular;
 
-	public String getName() {
-		return name;
-	}
+    public State(String name, int numElectoral, int numDem, int numRep) {
+        this.name = name;
+        this.numElectoral = numElectoral;
+        this.numDemPopular = numDem;
+        this.numRepPopular = numRep;
+    }
 
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public int getNumElectoral() {
+        return numElectoral;
+    }
 
-	/**
-	 * @return the numElectoral
-	 */
-	public int getNumElectoral() {
-		return numElectoral;
-	}
+    public int getNumDemVotes() {
+        return numDemPopular;
+    }
 
-	/**
-	 * @param numElectoral the numElectoral to set
-	 */
-	public void setNumElectoral(int numElectoral) {
-		this.numElectoral = numElectoral;
-	}
+    public void setNumDemVotes(int numDemVotes) {
+        this.numDemPopular = numDemVotes;
+    }
 
-	/**
-	 * @return the numDemVotes
-	 */
-	public int getNumDemVotes() {
-		return numDemPopular;
-	}
+    public int getNumRepVotes() {
+        return numRepPopular;
+    }
 
-	/**
-	 * @param numDemVotes the numDemVotes to set
-	 */
-	public void setNumDemVotes(int numDemVotes) {
-		this.numDemPopular = numDemVotes;
-	}
+    public void setNumRepVotes(int numRepVotes) {
+        this.numRepPopular = numRepVotes;
+    }
 
-	/**
-	 * @return the numRepVotes
-	 */
-	public int getNumRepVotes() {
-		return numRepPopular;
-	}
-
-	/**
-	 * @param numRepVotes the numRepVotes to set
-	 */
-	public void setNumRepVotes(int numRepVotes) {
-		this.numRepPopular = numRepVotes;
-	}
-	
-	
-	
-	
 
 }

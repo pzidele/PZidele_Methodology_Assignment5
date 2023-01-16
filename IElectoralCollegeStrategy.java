@@ -1,7 +1,5 @@
-package assignment5;
+package ElectoralVotes;
 
 public interface IElectoralCollegeStrategy {
-
     public void electoralVotes();
-
 }

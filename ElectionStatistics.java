@@ -1,19 +1,17 @@
-package assignment5;
+package ElectoralVotes;
 
 import java.util.Observable;
 
-// observable
 public class ElectionStatistics extends Observable {
 	Country country;
-	private int numPopular;
 
 	public ElectionStatistics() {}
-	
+
 	public void votesChanged () {
 		setChanged();
 		notifyObservers();
 	}
-	
+
 	public void setVotes(Country country) {
 		this.country = country;
 		votesChanged();
@@ -30,7 +28,7 @@ public class ElectionStatistics extends Observable {
 	public int getNumDemPopular() {
 		return country.getTotalDemPV();
 	}
-	
+
 	public int getNumRepPopular() {
 		return country.getTotalRepPV();
 	}
