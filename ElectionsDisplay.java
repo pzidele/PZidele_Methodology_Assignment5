@@ -31,7 +31,7 @@ public class ElectionsDisplay implements Observer {
 	}
 
 	public void update(Observable observable, Object obj) {
-		if (obj instanceof ElectionStatistics) {
+		if (observable instanceof ElectionStatistics) {
 			ElectionStatistics electionStatistics = (ElectionStatistics) observable;
 			
 			this.numDemPopular = electionStatistics.getNumDemPopular();
